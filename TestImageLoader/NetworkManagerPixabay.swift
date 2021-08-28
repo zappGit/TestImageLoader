@@ -35,8 +35,9 @@ class NetworkManagerPixabay {
         
     }
     //Func to get data from Unsplash API
-    func getPost(text: String, complition: @escaping([Hit]?, Error?) -> Void) {
-        let urlString = "https://pixabay.com/api/?key=23132531-be670cb0483c06e26caee5441&q=\(text)&per_page=200&pretty=true"
+    func getPost(complition: @escaping([Hit]?, Error?) -> Void) {
+        
+        let urlString = "https://pixabay.com/api/?key=23132531-be670cb0483c06e26caee5441&q=nature&per_page=200&pretty=true"
         
         guard let url = URL(string: urlString) else {
             complition(nil, NetworkManagerError.invalidUrl)

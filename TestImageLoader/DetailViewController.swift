@@ -11,7 +11,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var label:UILabel!
     @IBOutlet weak var detailImage: UIImageView!
     
-    let network = NetworkManagerUnsplash()
+    let network = NetworkManagerPixabay()
     
     //var result: Result?
     var image: UIImage?

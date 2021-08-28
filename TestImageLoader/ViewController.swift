@@ -7,18 +7,17 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var searchBar: UISearchBar!
     
     var results: [Hit] = []
     let network = NetworkManagerPixabay()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        searchBar.delegate = self
-        network.getPost(text: "cat") { [weak self] results, error in
+        
+        network.getPost() { [weak self] results, error in
             if let error = error {
                 print ("error", error)
                 return
@@ -33,29 +32,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     }
 
-   
+    
     // MARK: - Table view data source
 
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        searchBar.resignFirstResponder()
-        if let text = searchBar.text {
-//            results = []
-//            self.tableView.reloadData()
-            network.getPost(text: text) { [weak self] results, error in
-                if let error = error {
-                    print ("error", error)
-                    return
-                }
-                guard let results = results else { return }
-                self?.results = results
-                
-                DispatchQueue.main.async {
-                    self?.tableView.reloadData()
-                }
-            }
-            
-        }
-    }
+
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
@@ -125,11 +105,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             }
         }
     }
-    //TODO list
-    //Cash or CoreData
-    //Network status
-    //Qty of loading images
-    //NetworkManager??
 }
 
 
