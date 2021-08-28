@@ -12,6 +12,8 @@ class CustomTableViewCell: UITableViewCell {
     @IBOutlet weak var cellImage: UIImageView!
     @IBOutlet weak var cellDesc: UILabel!
     
+    var cellID: Int = 0
+    
     var image: UIImage? {
         didSet{
             cellImage.image = image

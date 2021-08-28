@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ImageReguest: Codable {
+struct Unsplash: Codable {
     let total: Int
     let total_pages: Int
     let results: [Result]
@@ -26,4 +26,5 @@ struct User: Codable {
 
 struct Urls: Codable {
     let small: String
+    let regular: String
 }
