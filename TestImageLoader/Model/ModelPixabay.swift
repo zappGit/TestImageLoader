@@ -6,17 +6,14 @@
 //
 
 import Foundation
-
+//Структура данных Pixabay API
 struct Pixabay: Codable {
     let total: Int
     let totalHits: Int
     let hits: [Hit]
 }
-
 struct Hit: Codable {
     let id: Int
     let tags: String?
     let webformatURL: String
 }
-
-

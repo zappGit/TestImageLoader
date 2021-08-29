@@ -11,15 +11,13 @@ class CustomTableViewCell: UITableViewCell {
 
     @IBOutlet weak var cellImage: UIImageView!
     @IBOutlet weak var cellDesc: UILabel!
-    
+//Кастомная ячейка
     var cellID: Int = 0
-    
     var image: UIImage? {
         didSet{
             cellImage.image = image
         }
     }
-    
     var desc: String? {
         didSet {
            cellDesc.text = desc
