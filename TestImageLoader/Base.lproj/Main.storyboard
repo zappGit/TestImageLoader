@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Image Loader App-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestImageLoader" customModuleProvider="target" sceneMemberID="viewController">
@@ -69,7 +69,7 @@
                             <constraint firstItem="e5m-dY-NC7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="x06-4j-nKf"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="uCd-FR-hen"/>
+                    <navigationItem key="navigationItem" title="Image Loader App" id="uCd-FR-hen"/>
                     <connections>
                         <outlet property="tableView" destination="e5m-dY-NC7" id="eKF-Nh-vmf"/>
                     </connections>
@@ -78,7 +78,7 @@
             </objects>
             <point key="canvasLocation" x="944.92753623188412" y="83.705357142857139"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--Detail photo info-->
         <scene sceneID="OSW-k9-zYE">
             <objects>
                 <viewController id="g9N-1y-oDq" customClass="DetailViewController" customModule="TestImageLoader" customModuleProvider="target" sceneMemberID="viewController">
@@ -120,7 +120,7 @@
                             <constraint firstItem="hWx-tp-vzH" firstAttribute="trailing" secondItem="B8o-Hb-WPy" secondAttribute="trailing" id="zqW-Tj-gVi"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="jvz-tl-1At"/>
+                    <navigationItem key="navigationItem" title="Detail photo info" id="jvz-tl-1At"/>
                     <connections>
                         <outlet property="detailImage" destination="eg9-im-uYc" id="1db-tD-cEP"/>
                         <outlet property="label" destination="Ja9-1S-A1x" id="8nb-Yb-DVi"/>

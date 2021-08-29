@@ -73,8 +73,7 @@
 				B8559DCF26DA3C790059BC09 /* ViewController.swift */,
 				B8559DE126DA3DD40059BC09 /* NetworkManagerUnsplash.swift */,
 				B8559DE926DA99AA0059BC09 /* NetworkManagerPixabay.swift */,
-				B8559DE326DA3DF80059BC09 /* ModelUnsplash.swift */,
-				B8559DE726DA98850059BC09 /* ModelPixabay.swift */,
+				B8559DEB26DBE9500059BC09 /* Model */,
 				B8559DD126DA3C790059BC09 /* Main.storyboard */,
 				B8559DE526DA48ED0059BC09 /* DetailViewController.swift */,
 				B8559DDF26DA3D310059BC09 /* CustomTableViewCell.swift */,
@@ -83,6 +82,15 @@
 				B8559DD926DA3C7B0059BC09 /* Info.plist */,
 			);
 			path = TestImageLoader;
+			sourceTree = "<group>";
+		};
+		B8559DEB26DBE9500059BC09 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B8559DE326DA3DF80059BC09 /* ModelUnsplash.swift */,
+				B8559DE726DA98850059BC09 /* ModelPixabay.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
